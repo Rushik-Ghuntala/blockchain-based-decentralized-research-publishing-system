@@ -11,7 +11,7 @@ const ReturnAuthorpage = (props) => {
 
   if(userLoggedIn) {
   return (
-    <>
+    <div>
       <div><strong><h1>Your Papers</h1></strong></div>
       <Link to='/profile'><strong className='profile'> Go To Profile</strong></Link>
       <table className="table table-dark ">
@@ -20,7 +20,7 @@ const ReturnAuthorpage = (props) => {
             {returntoauthorarray.map((paper, index) => {
               if (loggedInUserInfo.userAddress === paper.authorAddress) {
                 return (
-                  <>
+                  <div>
                   <tr bgcolor = " #b272ea"><th>Index</th><th>{index}</th></tr>
                   <tr><th bgcolor = "#e2a1f2">Abstract of Paper</th><td>{paper.abstractofpaper}</td></tr>
                   <tr><th bgcolor = "#e2a1f2">Title of Paper</th><td>{paper.papertitle}</td></tr>
@@ -29,14 +29,14 @@ const ReturnAuthorpage = (props) => {
                   <tr><th bgcolor = "#e2a1f2">AE's Remarks</th><td>{paper.reviewofAE}</td></tr>
                   <tr><th bgcolor = "#e2a1f2">Result</th><td><strong>{paper.messagetoauthor}</strong></td></tr>
                   <br></br>
-                  </>
+                  </div>
                 );
               }
             })}
           </tbody>
         }
       </table>
-    </>
+    </div>
   )
 } else {
   return (

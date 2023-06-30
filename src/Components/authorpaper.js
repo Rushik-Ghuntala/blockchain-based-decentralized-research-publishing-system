@@ -12,7 +12,7 @@ const AuthorPages = (props) => {
 
 if (userLoggedIn) {
   return (
-    <>
+    <div>
       <div className="upload-page">
         <nav className="navbar">
           <div className="navbar-left">
@@ -101,7 +101,7 @@ if (userLoggedIn) {
         </div>
         <br></br>
       </div>
-    </>
+    </div>
   );
 } else {
   return (

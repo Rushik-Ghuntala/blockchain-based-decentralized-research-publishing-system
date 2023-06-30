@@ -18,7 +18,7 @@ const PaperdataAE = (props) => {
           <tbody>
             {receivedByAEarray.map((paper, index) => {
               return (
-                <>
+                <div>
                   <tr bgcolor = " #b272ea"><th>Index</th><th>{index}</th></tr>
                   <tr><th bgcolor = "#e2a1f2">Abstract of Paper</th><td>{paper.abstractofpaper}</td></tr>
                   <tr><th bgcolor = "#e2a1f2">Title of Paper</th><td>{paper.papertitle}</td></tr>
@@ -40,7 +40,7 @@ const PaperdataAE = (props) => {
                       </svg>
                     </td></tr>
                   <br></br>
-                </>
+                </div>
               );
             })}
           </tbody>

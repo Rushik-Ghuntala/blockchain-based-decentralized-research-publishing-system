@@ -33,14 +33,14 @@ const PaperdataReturntoAE = (props) => {
 
   if(userLoggedIn) {
   return (
-    <>
+    <div>
       <Link to='/profile'><strong className='profile'> Go To Profile</strong></Link>
       <table className="table table-dark ">
         {
           <tbody>
             {returnToAEarray.map((paper, index) => {
               return (
-                <>
+                <div>
                   <tr bgcolor = " #b272ea"><th>Index</th><th>{index}</th></tr>
                   <tr><th bgcolor = "#e2a1f2">Abstract of Paper</th><td>{paper.abstractofpaper}</td></tr>
                   <tr><th bgcolor = "#e2a1f2">Title of Paper</th><td>{paper.papertitle}</td></tr>
@@ -65,14 +65,14 @@ const PaperdataReturntoAE = (props) => {
                     </td>
                     </tr>
                   <br></br>
-                </>
+                </div>
               );
             })}
           </tbody>
         }
       </table>
       <strong> Note: You need to send paper to the EIC from Reviewed by AE page after submitted the reviews.</strong>
-    </>
+    </div>
   )
 } else {
   return (

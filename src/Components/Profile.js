@@ -77,7 +77,7 @@ const Profile = (props) => {
                 <tbody>
                   {approovedMembersArray.map((member, index) => {
                     return (
-                      <>
+                      <div>
                         <tr>
                           <th>{index}</th>
                           <td>{member.name}</td>
@@ -85,7 +85,7 @@ const Profile = (props) => {
                           <td>{member.email}</td>
                           <td>{member.userAddress}</td>
                         </tr>
-                      </>
+                      </div>
                     );
                   })}
                 </tbody>
@@ -150,7 +150,7 @@ const Profile = (props) => {
                 <tbody>
                   {requestedMembersArray.map((member, index) => {
                     return (
-                      <>
+                      <div>
                         <tr>
                           <th>{index}</th>
                           <td>{member.name}</td>
@@ -175,7 +175,7 @@ const Profile = (props) => {
                           </td>
                           <td><button onClick={() => {denyMember(member.userAddress);}}>x</button></td>
                         </tr>
-                      </>
+                      </div>
                     );
                   })}
                 </tbody>
@@ -303,7 +303,7 @@ const Profile = (props) => {
                 <tbody>
                   {approovedMembersArray.map((member, index) => {
                     return (
-                      <>
+                      <div>
                         <tr>
                           <th>{index}</th>
                           <td>{member.name}</td>
@@ -311,7 +311,7 @@ const Profile = (props) => {
                           <td>{member.email}</td>
                           <td>{member.userAddress}</td>
                         </tr>
-                      </>
+                      </div>
                     );
                   })}
                 </tbody>
@@ -399,7 +399,7 @@ const Profile = (props) => {
                 <tbody>
                   {requestedMembersArray.map((member, index) => {
                     return (
-                      <>
+                      <div>
                         <tr>
                           <th>{index}</th>
                           <td>{member.name}</td>
@@ -424,7 +424,7 @@ const Profile = (props) => {
                           </td>
                           <td><button onClick={() => {denyMember(member.userAddress);}}>x</button></td>
                         </tr>
-                      </>
+                      </div>
                     );
                   })}
                 </tbody>
@@ -583,7 +583,7 @@ const Profile = (props) => {
                 <tbody>
                   {approovedMembersArray.map((member, index) => {
                     return (
-                      <>
+                      <div>
                         <tr>
                           <th>{index}</th>
                           <td>{member.name}</td>
@@ -591,7 +591,7 @@ const Profile = (props) => {
                           <td>{member.email}</td>
                           <td>{member.userAddress}</td>
                         </tr>
-                      </>
+                      </div>
                     );
                   })}
                 </tbody>
@@ -688,7 +688,7 @@ const Profile = (props) => {
                 <tbody>
                   {requestedMembersArray.map((member, index) => {
                     return (
-                      <>
+                      <div>
                         <tr>
                           <th>{index}</th>
                           <td>{member.name}</td>
@@ -713,7 +713,7 @@ const Profile = (props) => {
                           </td>
                           <td><button onClick={() => {denyMember(member.userAddress);}}>x</button></td>
                         </tr>
-                      </>
+                      </div>
                     );
                   })}
                 </tbody>
