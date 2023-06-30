@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Blockchain-based Decentralized Research Publishing System (B-DRPS)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## How to run the Dapp?
 
-## Available Scripts
+1. Install Prerequisites
 
-In the project directory, you can run:
+- Download and install NodeJS from [Download](https://nodejs.org/en/download/)
 
-### `npm start`
+- Install Visual Studio Code from [Download](https://code.visualstudio.com/download)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Install Ganache From  [Download](https://trufflesuite.com/ganache/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Install Metamask from [Download](https://metamask.io/download/)
 
-### `npm test`
+2. Make account on Web3.Storage
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Get Api Key from Web3.Storage[Web3.Storage](https://web3.storage/)
 
-### `npm run build`
+- Register and login to your account and Click on Account/create Api Token
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Make .env file in a App directory and copy Api token into it
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+REACT_APP_WEB3_STORAGE_API_KEY = PASTE YOUR TOKEN HERE
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Clone the Project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+$ git clone https://github.com/Rushik-Ghuntala/blockchain-based-decentralized-research-publishing-system.git
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Install all the Dependencies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+$ cd decentralized-message-sharing-app
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+$ npm install
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4. Run the local blockchain using desktop version of ganache 
 
-### Making a Progressive Web App
+5. Compile and migrate all the contracts using the truffle 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+$ truffle migrate --reset
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+6. Log in your MetaMask and import the demo accounts to interact with the App.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- For the demo accounts go to the ganache desktop make one demo workspace and you can see 10 demo accounts with 100 ETH
 
-### `npm run build` fails to minify
+- Now click on key icon you get private key of the accounts and import it to the metamask, add minimum 8 accounts for perfect testing.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- For more information, [click here](https://www.geeksforgeeks.org/how-to-set-up-ganche-with-metamask/)
+
+7. Now run the application 
+
+
+$ npm start
+
+
+
+8. now you are able to do interaction with the application.
+
+Note: Here, we make journal is pre-registered so if you want to do testing then uncomment the line no. 36 because in the code the journal is not register he can log in directly.
