@@ -34,7 +34,7 @@ $ git clone https://github.com/Rushik-Ghuntala/blockchain-based-decentralized-re
 3. Install all the Dependencies
 
 ```
-$ cd decentralized-message-sharing-app
+$ cd blockchain-based-decentralized-research-publishing-system
 
 $ npm install
 
@@ -64,4 +64,4 @@ $ npm start
 
 8. now you are able to do interaction with the application.
 
-Note: Here, we make journal is pre-registered so if you want to do testing then uncomment the line no. 36 because in the code the journal is not register he can log in directly.
+Note: Here, we make journal is pre-registered so if you want to do testing then uncomment the line no. 36 in signup.js file because in the code the journal is not register he can log in directly.
