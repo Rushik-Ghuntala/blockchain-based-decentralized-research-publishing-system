@@ -20,33 +20,33 @@
 
 - Make .env file in a App directory and copy Api token into it
 
-
+```
 REACT_APP_WEB3_STORAGE_API_KEY = PASTE YOUR TOKEN HERE
 
-
+```
 
 2. Clone the Project
 
-
+```
 $ git clone https://github.com/Rushik-Ghuntala/blockchain-based-decentralized-research-publishing-system.git
 
-
+```
 3. Install all the Dependencies
 
-
+```
 $ cd decentralized-message-sharing-app
 
 $ npm install
 
-
+```
 4. Run the local blockchain using desktop version of ganache 
 
 5. Compile and migrate all the contracts using the truffle 
 
-
+```
 $ truffle migrate --reset
 
-
+```
 6. Log in your MetaMask and import the demo accounts to interact with the App.
 
 - For the demo accounts go to the ganache desktop make one demo workspace and you can see 10 demo accounts with 100 ETH
@@ -57,10 +57,10 @@ $ truffle migrate --reset
 
 7. Now run the application 
 
-
+```
 $ npm start
 
-
+```
 
 8. now you are able to do interaction with the application.
 
