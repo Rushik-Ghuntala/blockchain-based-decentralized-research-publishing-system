@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const signup = (props) => {
   const { handleChange, requestUser, memberInfo } = props;
   return (
-    <div>
+    <>
     
       <div className='form-sign'>
         <h1>Signup Form</h1>
@@ -33,7 +33,7 @@ const signup = (props) => {
                 required
                 value={memberInfo.role}>
                 <option label='Select Role'></option>
-                {/* <option label='JOURNAL' value={"JOURNAL"}></option> */}
+                <option label='JOURNAL' value={"JOURNAL"}></option>
                 <option label='EIC' value={"EIC"}></option>
                 <option label='AE' value={"AE"}></option>
                 <option label='REVIEWER' value={"REVIEWER"}></option>
@@ -72,7 +72,7 @@ const signup = (props) => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

@@ -10,7 +10,7 @@ const Publishedpaperspage = (props) => {
   })
 
   return (
-    <div>
+    <>
 <strong><Link to = "/">Home</Link></strong>
       <div><strong><h1>Published Papers</h1></strong></div>
       <table className="table table-dark ">
@@ -18,7 +18,7 @@ const Publishedpaperspage = (props) => {
           <tbody>
             {publishpaperarray.map((paper, index) => {
               return (
-                <div>
+                <>
                   <tr bgcolor = " #b272ea"><th>Index</th><th>{index}</th></tr>
                   <tr><th bgcolor = "#e2a1f2">Abstract of Paper</th><td>{paper.abstractofpaper}</td></tr>
                   <tr><th bgcolor = "#e2a1f2">Title of Paper</th><td>{paper.papertitle}</td></tr>
@@ -26,13 +26,13 @@ const Publishedpaperspage = (props) => {
                   <tr><th bgcolor = "#e2a1f2">Author of Paper</th><td>{paper.name}</td></tr>
                   <tr><th bgcolor = "#e2a1f2">Email of Author</th><td>{paper.email}</td></tr>
                   <br></br>
-                </div>
+                </>
               );
             })}
           </tbody>
         }
       </table>
-    </div>
+    </>
   )
 }
 
