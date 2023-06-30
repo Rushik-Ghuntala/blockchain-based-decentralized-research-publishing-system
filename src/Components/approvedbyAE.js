@@ -12,7 +12,7 @@ const ApprovedByAEpage = (props) => {
 
 if (userLoggedIn) {
   return (
-    <>
+    <div>
       <Link to='/profile'><strong className='profile'> Go To Profile</strong></Link>
       <table className="table table-dark ">
         {/* Mapping array for papers */}
@@ -32,7 +32,7 @@ if (userLoggedIn) {
           </tbody>
         }
       </table>
-    </>
+    </div>
   )
 } else {
   return (
