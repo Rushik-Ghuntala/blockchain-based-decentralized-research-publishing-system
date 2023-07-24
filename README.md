@@ -14,7 +14,7 @@
 
 2. Make account on Web3.Storage
 
-- Get Api Key from Web3.Storage[Web3.Storage](https://web3.storage/)
+- Get Api Key from [Web3.Storage](https://web3.storage/)
 
 - Register and login to your account and Click on Account/create Api Token
 
@@ -62,6 +62,6 @@ $ npm start
 
 ```
 
-8. now you are able to do interaction with the application.
+8. Now you are able to do interaction with the application.
 
 Note: Here, we make journal is pre-registered so if you want to do testing then uncomment the line no. 36 in signup.js file because in the code the journal is not register he can log in directly.
