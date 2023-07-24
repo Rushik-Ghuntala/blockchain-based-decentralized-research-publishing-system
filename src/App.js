@@ -34,7 +34,7 @@ function App() {
   const [maincontractaddress, setMainContractAddress] = useState(null);
   const [decisioncontractaddress, setDecisionContractAddress] = useState(null);
 
-  // Connection of Smart Contracts usinf Web3 and Metamask connection Checking for login
+  // Connection of Smart Contracts using Web3 and Metamask connection Checking for login
   // State for check smart contract is connected or not also frontend is doing conversion with smart contract or not
   const [state, setState] = useState({ web3: null, authcontract: null, maincontract: null, decisioncontract: null });
   // useEffect is for calling smart contracts when state change and component render
